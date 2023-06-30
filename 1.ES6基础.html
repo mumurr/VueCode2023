@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    class   Chef{
+        constructor(foods) {
+            this.foods=foods
+        }
+        cook(){
+            console.log("马狂做饭"+this.foods)
+        }
+
+    }
+    let yfl=new Chef("早饭")
+    yfl.cook()
+
+    let  eat=()=>{return ["麻辣烫","小龙虾","酸辣粉"]}
+
+    let [malatang,...xiaolongxia]=eat();
+
+    console.log(malatang,...xiaolongxia)
+
+
+
+    let food="米线马狂"
+    let breakfast=`晚上吃的是:          ${food}`
+    console.log(breakfast)
+
+
+</script>
+</html>
